@@ -1,0 +1,160 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+}
+
+.nav-list {
+  position: fixed;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  background: rgba(0, 0, 0, 0.483);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.9px);
+  -webkit-backdrop-filter: blur(11.9px);
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  visibility: hidden;
+}
+
+.nav-list.loaded {
+  visibility: visible;
+}
+
+.nav-list.show {
+  transform: translateX(0);
+}
+.nav-list li {
+  list-style: none;
+  text-align: center;
+}
+
+.nav-list li a {
+  font-family: "horizon_outlined" !important;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: max(3vw, 20px);
+  padding: 15px 20px;
+  display: inline-flex;
+  font-weight: 700;
+  transition: 0.5s;
+}
+.nav-list a:hover {
+  font-family: "horizon" !important;
+  padding-right: 10vw;
+}
+
+.nav-list li a:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: rgba(255, 255, 255, 0.1);
+  opacity: 0;
+  font-weight: 900;
+  letter-spacing: 500px;
+  transition: letter-spacing 0.5s, left 0.5s;
+  padding-left: 1vw;
+}
+
+.nav-list li a:hover:before {
+  content: attr(data-text);
+  opacity: 1;
+  left: 50%;
+  letter-spacing: 10px;
+  z-index: -1;
+}
+/* /////////////////////////LOGO */
+.logo-menu {
+padding-left: 4vh;
+padding-top: 1vh;
+  transition: 0.3s;
+  z-index: 3;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: center;
+  align-content: center;
+  position: relative;
+  width: 23em;
+}
+
+.logo-home {
+  background-image: url('../Assets/Images/harbuz-logo-white.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  grid-column: 1 / 2;
+  width: 7vh;
+  min-width: 50px;
+  height: 7vh;
+  min-height: 50px;
+  transition: 0.3s;
+}
+
+.logo-menu:hover .logo-home {
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.click {
+  font-family: "danielbd";
+  color: white;
+  font-size: 1.5em;
+  align-items: center;
+  opacity: 0;
+  transform: translateX(-100%);
+  position: absolute;
+  left: 0;
+}
+
+.logo-menu:hover .click {
+  transition: 0.3s;
+  grid-column: 2 / 3;
+  align-items: center;
+  opacity: 1;
+  transform: translateX(0);
+  padding-left: 1vw;
+  transform: rotate(-5deg);
+  z-index: 0;
+  top: 2rem;
+}
+
+.h5-menu {
+  font-family: "horizon" !important;
+  color: white;
+  font-size: 1.5em;
+  transition: 0.3s;
+  grid-column: 2 / 3;
+  align-items: center;
+  opacity: 1;
+  transform: translateX(0);
+  padding-left: 1vw;
+}
+
+.logo-menu:hover .h5-menu {
+  font-size: 0.7vw;
+  align-items: center;
+  opacity: 0;
+  /* transform: translateX(-100%); */
+  left: 0;
+}
+
+.logo-menu:hover {
+  transform: scale(1.2);
+}
+

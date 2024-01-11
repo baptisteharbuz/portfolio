@@ -1,0 +1,89 @@
+@font-face {
+    font-family: "horizon";
+    src: url('../Assets/Fonts/horizon.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "horizon_outlined";
+    src: url('../Assets/Fonts/horizon_outlined.otf') format('opentype');
+}
+
+@font-face {
+    font-family: "danielbd";
+    src: url('../Assets/Fonts/danielbd.ttf')
+}
+
+.txt-home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.baptiste {
+    font-family: "horizon_outlined" !important;
+}
+
+.harbuz,
+h2,
+h3,
+h4,
+h6,
+li {
+    font-family: "horizon" !important;
+}
+
+.h1-project {
+    font-family: "horizon" !important;
+}
+
+.baptiste,
+.harbuz {
+    margin: 0;
+    font-size: max(4vw, 30px);
+    color: #ffffff;
+}
+
+.portfolio {
+    margin-top: 2vw;
+    font-size: max(1vw, 7px);
+    letter-spacing: max(1.5vw, 10px);
+    color: #ffffff;
+}
+
+.portfolio-justify {
+    text-align: justify;
+}
+
+h3,
+p {
+    color: #25292E;
+}
+
+.bloc-txt-projets h2 {
+    font-family: "horizon_outlined" !important;
+    text-align: left;
+    font-size: 1.2vw;
+}
+
+.h6-project {
+    text-align: right;
+    font-size: 0.6vw;
+}
+
+
+.bloc-txt-projets h2,
+.bloc-txt-projets h2:hover {
+    transition: 0.3s;
+}
+
+.enigme-evadees:hover .h2-project,
+.cafe-creme:hover .h2-project,
+.garçonne:hover .h2-project {
+    font-family: "horizon" !important;
+    font-size: 1.2vw;
+    transition: 0.3s;
+}
+.h2-project {
+    transition: 0.3s;
+}
