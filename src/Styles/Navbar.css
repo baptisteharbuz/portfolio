@@ -1,3 +1,50 @@
+/* ///////////////////DARK & LIGHT */
+.light{
+  .nav-list li a,
+  .click,
+  .h5-menu {
+  color: #25292E;;
+}
+.logo-home {
+  background-image: url('../Assets/Images/harbuz-logo-black.svg');
+}
+.nav-list li a:before {
+  color: rgba(0, 0, 0, 0.1);
+}
+.theme{
+  background-image: url('../Assets/Images/lune-black.svg');
+}
+.nav-list {
+  background: rgba(255, 255, 255, 0.483);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
+}
+}
+
+.dark {
+  .nav-list li a,
+  .click,
+  .h5-menu {
+  color: white;
+}
+.logo-home {
+  background-image: url('../Assets/Images/harbuz-logo-white.svg');
+}
+.nav-list li a:before {
+  color: rgba(255, 255, 255, 0.1);
+}
+.theme{
+  background-image: url('../Assets/Images/soleil-white.svg');
+}
+.nav-list {
+  background: rgba(0, 0, 0, 0.483);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+}
+
+
+/* ///////////////////NavBar */
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -5,6 +52,13 @@
   position: absolute;
 }
 
+.menu-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100vw;
+  align-items: center;
+  
+}
 .nav-list {
   position: fixed;
   z-index: 2;
@@ -17,9 +71,6 @@
   margin: 0;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.483);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(11.9px);
   -webkit-backdrop-filter: blur(11.9px);
   transition: transform 0.3s ease-in-out;
@@ -29,10 +80,12 @@
 
 .nav-list.loaded {
   visibility: visible;
+
 }
 
 .nav-list.show {
   transform: translateX(0);
+  padding: 0;
 }
 .nav-list li {
   list-style: none;
@@ -41,9 +94,8 @@
 
 .nav-list li a {
   font-family: "horizon_outlined" !important;
-  color: #ffffff;
   text-decoration: none;
-  font-size: max(3vw, 20px);
+  font-size: max(2vw, 20px);
   padding: 15px 20px;
   display: inline-flex;
   font-weight: 700;
@@ -64,12 +116,11 @@
   justify-content: center;
   align-items: center;
   font-size: 3em;
-  color: rgba(255, 255, 255, 0.1);
   opacity: 0;
   font-weight: 900;
   letter-spacing: 500px;
   transition: letter-spacing 0.5s, left 0.5s;
-  padding-left: 1vw;
+  padding-left: 0;
 }
 
 .nav-list li a:hover:before {
@@ -91,18 +142,19 @@ padding-top: 1vh;
   align-content: center;
   position: relative;
   width: 23em;
+grid-column: 1 / 2;
 }
 
+
 .logo-home {
-  background-image: url('../Assets/Images/harbuz-logo-white.svg');
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   grid-column: 1 / 2;
-  width: 7vh;
-  min-width: 50px;
-  height: 7vh;
-  min-height: 50px;
+  width: 7rem;
+  min-width: 40px;
+  height: 7rem;
+  min-height: 40px;
   transition: 0.3s;
 }
 
@@ -113,13 +165,13 @@ padding-top: 1vh;
 
 .click {
   font-family: "danielbd";
-  color: white;
-  font-size: 1.5em;
+  font-size: max(1.5rem, 15px);
   align-items: center;
   opacity: 0;
   transform: translateX(-100%);
   position: absolute;
   left: 0;
+  width: 40vw;
 }
 
 .logo-menu:hover .click {
@@ -136,8 +188,7 @@ padding-top: 1vh;
 
 .h5-menu {
   font-family: "horizon" !important;
-  color: white;
-  font-size: 1.5em;
+  font-size: max(1.5rem, 10px);
   transition: 0.3s;
   grid-column: 2 / 3;
   align-items: center;
@@ -150,7 +201,6 @@ padding-top: 1vh;
   font-size: 0.7vw;
   align-items: center;
   opacity: 0;
-  /* transform: translateX(-100%); */
   left: 0;
 }
 
@@ -158,3 +208,24 @@ padding-top: 1vh;
   transform: scale(1.2);
 }
 
+.theme-button{
+  margin-right: 0;
+  z-index: 3;
+  display: grid;
+  justify-content: end;
+  padding-right: 4vh;
+  padding-top: 1vh;
+}
+
+.theme{
+  width: 5rem;
+  height: 5rem;
+  transition: 0.3s;
+  grid-column: 2 / 3;
+  
+}
+
+.theme:hover{
+  transform: scale(1.5);
+  transition: 0.3s;
+}

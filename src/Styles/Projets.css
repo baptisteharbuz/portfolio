@@ -1,30 +1,100 @@
+/* ///////////////////DARK & LIGHT */
+.light {
+
+    .h1-wait,
+    .h2-project,
+    .bloc-txt-projets {
+        color: #25292E;;
+    }
+
+    .line {
+        background-color: #25292E;;
+    }
+}
+
+.dark {
+
+    .h1-wait,
+    .h2-project,
+    .bloc-txt-projets {
+        color: white;
+    }
+
+    .line {
+        background-color: white;
+    }
+}
+
+/* ///////////////////MES PROJETS*/
 .mesprojets-container {
     display: grid;
     grid-template-columns: 2fr 1fr;
     justify-content: center;
     align-items: center;
     height: 100vh;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1024px) {
+    .mesprojets-container {
+        display: flex;
+        height: 100vh;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+    }
+
+    .bloc-projets {
+        width: 100vw;
+        height: auto;
+    }
+
+    .mesprojets-container .bloc-txt-projets-container {
+        width: 100vw;
+    }
+
+    .bloc-txt-projets {
+        width: 100vw;
+    }
 }
 
 .bloc-projets {
-    /* padding: 20px; */
-    /* margin: 1vw; */
-        object-fit: cover;
-        aspect-ratio: 16 / 9;
-        transition: 0.3s;
-        border-radius: 25%;
+    object-fit: cover;
+    aspect-ratio: 16 / 9;
+    transition: 0.3s;
+    border-radius: 25%;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.cards-projets {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.h1-wait {
+    text-align: center;
+    font-family: "danielbd";
+    transform: rotate(-10deg);
+    font-size: max(2vw, 20px);
 }
 
 .bloc-txt-projets-container {
-display: flex;
-align-items: flex-start;
-align-content: flex-start;
-width: 50vw;
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 50vw;
 }
 
 .bloc-txt-projets {
-color: rgb(255, 255, 255);
-    padding: 20px 20px 20px 0;
+    padding: 20px 20px 20px 20px;
     margin: 1vw;
     text-align: center;
     z-index: 1;
@@ -32,11 +102,9 @@ color: rgb(255, 255, 255);
     flex-direction: column;
     align-content: space-around;
     align-items: center;
-    /* height: 30vw; */
 }
 
-.line{
-    background-color: #ffffff;
+.line {
     width: 40vw;
     height: 0.2vw;
     transition: 0.3s;
@@ -44,17 +112,17 @@ color: rgb(255, 255, 255);
 
 .enigme-evadees,
 .cafe-creme,
-.garçonne{
+.garçonne {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: space-between;
     padding: 1vw;
     transition: 0.3s;
 }
+
 .enigme-evadees:hover,
 .cafe-creme:hover,
 .garçonne:hover {
-    /* background: #FFD213; */
     transform: scale(1.2);
     transition: 0.3s;
 }

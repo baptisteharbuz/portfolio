@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import React, { useEffect } from 'react';
+import React from 'react';
 // Components
 import NavBar from './Components/NavbarComponent';
 import Grain from "./Components/GrainComponent";
@@ -12,39 +12,23 @@ import Contact from './Pages/ContactPage';
 // import Menu from './Pages/MenuPage';
 // Styles
 import './Styles/Style.css';
-import BackgroundVideo from './Assets/Videos/background-1.mp4'
+// import BackgroundVideo from './Assets/Videos/background-1.mp4'
+import LightVideo from './Assets/Videos/bg-white.mp4'
+import DarkVideo from './Assets/Videos/bg-dark.mp4'
 
 function App() {
-  useEffect(() => {
-    // Ajoutez le code JavaScript pour le curseur ici
-    const cursorDot = document.querySelector('.cursor-dot');
-    const cursor = document.querySelector('.cursor');
-
-    document.addEventListener('mousemove', (e) => {
-      const { clientX, clientY } = e;
-      cursorDot.style.left = `${clientX}px`;
-      cursorDot.style.top = `${clientY}px`;
-      cursor.style.left = `${clientX}px`;
-      cursor.style.top = `${clientY}px`;
-    });
-
-    document.addEventListener('mouseover', () => {
-      cursorDot.style.opacity = 1;
-      cursor.style.opacity = 1;
-    });
-
-    document.addEventListener('mouseout', () => {
-      cursorDot.style.opacity = 0;
-      cursor.style.opacity = 0;
-    });
-  }, []);
 
   return (
     <BrowserRouter>
       <div>
-      <div className="video-background">
+      <div className="LightVideo-background">
       <video autoPlay loop muted className="fullscreen-video">
-          <source src={BackgroundVideo} type="video/mp4"></source>
+          <source src={LightVideo} type="video/mp4"></source>
+        </video>
+        </div>
+        <div className="DarkVideo-background">
+      <video autoPlay loop muted className="fullscreen-video">
+          <source src={DarkVideo} type="video/mp4"></source>
         </video>
         </div>
         <NavBar />

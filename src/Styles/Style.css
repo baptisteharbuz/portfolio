@@ -1,9 +1,32 @@
+/* ///////////////////DARK & LIGHT */
+.light {
+    .LightVideo-background {
+        opacity: 1;
+    }
+
+    .DarkVideo-background {
+        opacity: 0;
+    }
+}
+
+.dark {
+    .DarkVideo-background {
+        opacity: 1;
+    }
+
+    .LightVideo-background {
+        opacity: 0;
+    }
+}
+
 body {
     /* cursor: none; */
     /* background-color: #202020; */
 }
 
-.cursor-dot {}
+/* ///////////////////CURSOR */
+.cursor-dot {
+}
 
 .cursor {
     position: fixed;
@@ -13,18 +36,11 @@ body {
     border-radius: 50%;
     border-width: 2px;
     transform: translate(-50%, -50%) scale(1);
-    /* z-index: 2; */
     color: white;
     mix-blend-mode: difference;
 }
 
-.body-home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
-
+/* ///////////////////GRAIN */
 .grain {
     position: fixed;
     top: -50%;
@@ -67,6 +83,14 @@ body {
     }
 }
 
+/* ///////////////////HOMEPAGE */
+.body-home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .line {
     background-color: black;
     height: 0.2vw;
@@ -76,7 +100,8 @@ body {
     width: 40vw;
 }
 
-.video-background {
+.LightVideo-background,
+.DarkVideo-background {
     position: fixed;
     top: 0;
     right: 0;
@@ -87,8 +112,3 @@ body {
     pointer-events: none;
     z-index: -1;
 }
-/* .fullscreen-video{
-width: 100%;
-height: 100%;
-object-fit: cover;
-} */

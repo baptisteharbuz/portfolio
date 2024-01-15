@@ -5,6 +5,7 @@ import { useState, useEffect } from 'react';
 const Navbar = () => {
     const [showNav, setShowNav] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
+    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
     useEffect(() => {
         setIsLoaded(true);
@@ -13,9 +14,18 @@ const Navbar = () => {
     const closeNav = () => {
         setShowNav(false);
     };
+    useEffect(() => {
+        document.body.className = theme;
+        localStorage.setItem('theme', theme);
+    }, [theme]);
+
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    };
 
     return (
         <nav className="navbar">
+            <div className='menu-grid'>
             <div className='logo-menu' onClick={() => setShowNav(!showNav)}>
                 <div className='logo-home'></div>
                 <h5 className='h5-menu'>MENU</h5>
@@ -27,6 +37,11 @@ const Navbar = () => {
                 <li><Link to='/cv' data-text='CV' onClick={closeNav}>CV</Link></li>
                 <li><Link to='/contact' data-text='CONTACT' onClick={closeNav}>Contact</Link></li>
             </ul>
+            <div className='theme-button'>
+                <div className='theme' onClick={toggleTheme}></div>
+                
+            </div>
+            </div>
         </nav>
     );
 }

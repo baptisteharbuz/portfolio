@@ -12,6 +12,57 @@
     font-family: "danielbd";
     src: url('../Assets/Fonts/danielbd.ttf')
 }
+/* ///////////////////DARK & LIGHT */
+.light{
+    .baptiste,
+.harbuz,
+.portfolio,
+.h4-homepage a {
+    color: #25292E;;
+}
+}
+.dark {
+    .baptiste,
+.harbuz,
+.portfolio,
+.h4-homepage a {
+    color: white;
+}
+}
+
+.harbuz,
+h2,
+h3,
+h4,
+.h6-project,
+.h1-project,
+.h1-contact, 
+li {
+    font-family: "horizon";
+}
+
+.h1-project,
+.h1-contact {
+    font-size: max(2vw, 20px);
+}
+/* ///////////////////HOME PAGE */
+
+.h4-homepage a{
+    font-family: "danielbd";
+    font-size: max(1vw, 7px);
+    text-decoration: none;
+}
+
+.h4-homepage {
+    z-index: 1;
+    transition: 0.3s;
+}
+
+.h4-homepage:hover {
+    transform: scale(1.2) rotate(-5deg);
+    transition: 0.3s;
+    text-decoration: none;
+}
 
 .txt-home {
     display: flex;
@@ -23,52 +74,38 @@
 .baptiste {
     font-family: "horizon_outlined" !important;
 }
-
-.harbuz,
-h2,
-h3,
-h4,
-h6,
-li {
-    font-family: "horizon" !important;
-}
-
-.h1-project {
-    font-family: "horizon" !important;
-}
-
 .baptiste,
 .harbuz {
     margin: 0;
     font-size: max(4vw, 30px);
-    color: #ffffff;
+    
 }
 
 .portfolio {
     margin-top: 2vw;
     font-size: max(1vw, 7px);
-    letter-spacing: max(1.5vw, 10px);
-    color: #ffffff;
+    letter-spacing: max(3vw, 20px);
 }
 
 .portfolio-justify {
-    text-align: justify;
+    text-align: center;
+    padding-left: max(3vw, 20px);
 }
-
+/* ///////////////////CV PAGE */
 h3,
 p {
     color: #25292E;
 }
-
+/* ///////////////////PROJET PAGE */
 .bloc-txt-projets h2 {
     font-family: "horizon_outlined" !important;
     text-align: left;
-    font-size: 1.2vw;
+    font-size: max(1.2vw, 15px);
 }
 
 .h6-project {
     text-align: right;
-    font-size: 0.6vw;
+    font-size: max(0.6vw, 7px);
 }
 
 
@@ -81,9 +118,20 @@ p {
 .cafe-creme:hover .h2-project,
 .garçonne:hover .h2-project {
     font-family: "horizon" !important;
-    font-size: 1.2vw;
     transition: 0.3s;
 }
-.h2-project {
+
+.enigme-evadees:hover .h6-project,
+.cafe-creme:hover .h6-project,
+.garçonne:hover .h6-project {
+    font-family: "horizon" !important;
     transition: 0.3s;
+}
+
+
+
+
+/* ///////////////////CONTACT PAGE */
+.number {
+    font-size: max(0.8vw, 10px);
 }

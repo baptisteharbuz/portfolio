@@ -16,14 +16,15 @@ html {
     src: url('../Assets/Fonts/RobotoMono-Regular.ttf') format('opentype');
 }
 
+@media screen and (max-width: 1100px) {
+    .cv-container {
+        align-content: center;
+        transition: 0.3s;
+    }
+}
 /* ////////////////////////////////////CV */
 
 .cv-container {
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* background-color: #FDF7F0; */
-    /* padding: 10vh 20vw 10vh 20vw; */
     display: grid;
     grid-template-columns: 20vw 60vw 20vw;
     align-items: center;
@@ -31,39 +32,6 @@ html {
     height: 100vh;
 
 }
-
-/* @media (max-width: 700px) {
-    .cv-container{
-        display: grid;
-        grid-template-columns: 0 100vw 0;
-        grid-template-rows: 0 100vh 0;
-    }
-    .cv{
-        aspect-ratio: 21 / 29.7;
-    }
-    .p-cv {
-        font-size: 10vw;
-    }
-    .baptiste-cv {
-        font-size: 3vw;
-    }
-    
-    .harbuz-cv {
-        font-size: 10vw;
-    }
-} */
-
-/* @media screen and (max-width: 600px) {
-.cv-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.cv {
-    width: auto;
-    height: 70vh;
-}
- } */
 
 .cv {
     background-color: #fdf1e2;
@@ -73,22 +41,15 @@ html {
     position: relative;
     z-index: 1;
     height: 80vw;
-    
-        /* aspect-ratio: 21 / 29.7; */
-    /* width: calc(100vw * 21 / 29.7); */
-    /* height: calc(100vh * 21 / 29.7); */
     display: grid;
     grid-template-columns: 7% 30% 2% 54% 7%;
     grid-template-rows: 2% 10% 3% 83% 2%;
     grid-column: 2 / 3;
     grid-row: 2 / 3;
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
 }
 
 /* .cv {
-    background-image: url('../Assets/Images/CV.png');
-    background-size:contain;
-    background-position: center;
-    position: relative;
 } */
 
 /* ////////////////////////////////////TITRE */
@@ -99,10 +60,6 @@ html {
     flex-direction: column;
     justify-content: center;
     padding: 0 3vw 0 3vw;
-    /* background-color: aqua; */
-    /* display: grid;
-    grid-template-columns: 5% 40% 10% 40% 5%;
-    grid-template-rows: 10% 40% 20% 30%; */
 }
 
 .txt-name {
@@ -111,14 +68,8 @@ html {
     justify-content: space-between;
 }
 
-.div-container {
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr; */
-    /* height: 20vw; */
-}
+/* .div-container {
+} */
 
 /* ////////////////////////////////////TEXT */
 .baptiste-cv,
@@ -132,19 +83,13 @@ html {
 
 .baptiste-cv {
     font-family: "horizon" !important;
-    /* grid-column: 2 / 4;
-    grid-row: 2 / 3; */
     text-align: left;
-    /* display: grid;
-    align-content: start; */
     font-size: 3vw;
     margin: 0;
 }
 
 .harbuz-cv {
     font-family: "horizon_outlined" !important;
-    /* grid-column: 4 / 5;
-    grid-row: 2 / 3; */
     text-align: right;
     font-size: 3vw;
     margin: 0;
@@ -166,8 +111,6 @@ h4 {
 .h3-cv {
     font-size: 1vw;
     text-align: left;
-    /* grid-column: 2 / 5;
-    grid-row: 3 / 4; */
 }
 
 .h4-cv {
@@ -281,18 +224,11 @@ right: 25%;
 }
 
 .beside-picture {
-    /* background-color: #29DD41; */
     height: 30%;
 }
 /* ////////////////////////////////////PARTIE JAUNE GAUCHE */
 .yellow-down {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-content: center; */
     grid-row: 2 / 3;
-    /* padding: 15px; */
-
 }
 
 .logo-formations {
@@ -339,10 +275,6 @@ right: 25%;
 
 /* ////////////////////////////////////PARTIE DROITE */
 .cv-right {
-    /* padding: 1vw;
-    text-align: justify; */
-    /* width: 48vw; */
-    /* height: 92vw; */
     grid-column: 4 / 5;
     grid-row: 4 / 5;
     height: 70;
@@ -363,22 +295,12 @@ right: 25%;
 }
 
 .txt-competences {
-    /* display: flex;
-    flex-direction: column;
-    align-items: space-between; */
-    padding: 1vw 0vw 1vw 2vw;
+    padding: 1vw 3vw 1vw 2vw;
+    text-align: justify;
 }
-/* .txt-competences .p-cv {
-    padding-top: 1vh;
+
+/* .experiences-container {
 } */
-
-.txt-competences .p-cv {
-    /* padding-bottom: 1vw; */
-}
-
-.experiences-container {
-    /* height: 30vw; */
-}
 
 .experiences {
     background-color: #FFD213;
@@ -392,30 +314,22 @@ right: 25%;
 }
 
 .exp-container {
-    padding-left: 2vw;
-    /* flex-direction: column;
-    align-items: center; */
+    padding: 1vw 0 0 2vw;
 }
 
-.title-experience {
-    /* display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    text-align: left; */
-}
+/* .title-experience {
+} */
 
 .detail-txt-container {
     display: grid;
     grid-template-columns: 1fr 2fr;
     align-content: center;
     align-items: center;
+    width: 30vw;
 }
 
 .txt-experience {
-    /* display: flex;
-    flex-direction: column;
-    align-content: space-between; */
-    /* padding: 1vw 0vw 1vw 2vw; */
+    text-align: justify;
 }
 
 /* ////////////////////////////////////HOVER */
@@ -446,13 +360,12 @@ right: 25%;
 .competences-container .p-cv:hover,
 .detail-txt-container:hover {
     background: #FFD213;
-    /* border: solid 1px #25292E; */
     box-shadow: 0.4vw 0.4vw #25292E;
 }
 
-.p-cv:hover {
+/* .p-cv:hover {
     font-weight: bold;
-}
+} */
 
 .red:hover,
 .yellow:hover,
