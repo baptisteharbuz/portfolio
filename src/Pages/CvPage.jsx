@@ -33,7 +33,10 @@ const cv = () => {
                             <p className='p-cv'>Véhicule</p>
                             <p className='p-cv'><b>06 18 12 53 30</b></p>
                             <p className='p-cv'>contact@baptisteharbuz.fr</p>
+                            <div className='lien-cv'>
+                            <div className='Logo-Linkedin-Cv'></div>
                             <p className='p-cv'><b>baptiste-harbuz</b></p>
+                            </div>
                         </div>
                         <div className='formation'>
                             <h2 className='h2-cv'>FORMATIONS</h2>

@@ -236,6 +236,26 @@ right: 25%;
     justify-content: space-around;
     padding: 1vw 0 1vw 0;
 }
+.lien-cv {
+display: flex;
+flex-direction: row;
+align-items: center;
+align-content: center;
+
+}
+.lien-cv .p-cv{
+padding-left: 0.5vw;
+}
+.Logo-Linkedin-Cv{
+    background-image: url('../Assets/Images/linkedin-black.svg');
+    width: 1.5vw;
+    height: 1.5vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+margin-left: 1vw;
+
+}
 
 .logo {
     text-align: center;
