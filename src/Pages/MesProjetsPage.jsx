@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 // STYLES
 import "../Styles/Projets.css";
-// import "../Styles/ProjetsNew.css"
 import "../Styles/Texte.css";
 // VIDEOS
 import EnigmesEvadees from "../Assets/Videos/Enigmes-Evadees.mp4"

@@ -9,10 +9,8 @@ import HomePage from './Pages/HomePage';
 import CV from './Pages/CvPage';
 import MesProjets from './Pages/MesProjetsPage';
 import Contact from './Pages/ContactPage';
-// import Menu from './Pages/MenuPage';
 // Styles
 import './Styles/Style.css';
-// import BackgroundVideo from './Assets/Videos/background-1.mp4'
 import LightVideo from './Assets/Videos/bg-white.mp4'
 import DarkVideo from './Assets/Videos/bg-dark.mp4'
 
