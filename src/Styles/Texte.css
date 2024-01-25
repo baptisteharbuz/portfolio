@@ -30,20 +30,20 @@
 }
 }
 
-.harbuz,
-h2,
-h3,
-h4,
-.h6-project,
-.h1-project,
-.h1-contact, 
-li {
+body {
     font-family: "horizon";
+}
+
+.videos-hovered1 button,
+.videos-hovered2 button,
+.videos-hovered3 button {
+    font-family: "horizon";
+    font-size: max(0.6vw, 7px);
 }
 
 .h1-project,
 .h1-contact {
-    font-size: max(2vw, 20px);
+    font-size: max(4vw, 20px);
 }
 /* ///////////////////HOME PAGE */
 
@@ -57,18 +57,18 @@ li {
     z-index: 1;
     transition: 0.3s;
 }
-
+@media (min-width: 1250px){
 .h4-homepage:hover {
     transform: scale(1.2) rotate(-5deg);
     transition: 0.3s;
     text-decoration: none;
 }
-
+}
 .txt-home {
     display: flex;
     flex-direction: column;
     align-items: center;
-
+z-index: 1;
 }
 
 .baptiste {
@@ -107,29 +107,24 @@ p {
     text-align: right;
     font-size: max(0.6vw, 7px);
 }
+/* .bloc-txt-projets h2::after {
+font-family: "horizon" !important;
+transition: 0.3s;
+} */
 
-
+@media (min-width: 1250px){
 .bloc-txt-projets h2,
-.bloc-txt-projets h2:hover {
-    transition: 0.3s;
-}
-
+.bloc-txt-projets h2:hover,
 .enigme-evadees:hover .h2-project,
 .cafe-creme:hover .h2-project,
-.garçonne:hover .h2-project {
-    font-family: "horizon" !important;
-    transition: 0.3s;
-}
-
+.garçonne:hover .h2-project,
 .enigme-evadees:hover .h6-project,
 .cafe-creme:hover .h6-project,
 .garçonne:hover .h6-project {
     font-family: "horizon" !important;
     transition: 0.3s;
 }
-
-
-
+}
 
 /* ///////////////////CONTACT PAGE */
 .number {

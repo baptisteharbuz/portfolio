@@ -25,9 +25,10 @@ body {
 }
 
 /* ///////////////////CURSOR */
-.cursor-dot {
-}
 
+/* .cursor-dot {
+} */
+@media (min-width: 1250px){
 .cursor {
     position: fixed;
     width: 20px;
@@ -39,7 +40,7 @@ body {
     color: white;
     mix-blend-mode: difference;
 }
-
+}
 
 
 /* ///////////////////GRAIN */

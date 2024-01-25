@@ -20,18 +20,19 @@ function App() {
     <BrowserRouter>
       <div>
       <div className="LightVideo-background">
-      <video autoPlay loop muted className="fullscreen-video">
+      <video ontrols={false} autoPlay loop muted className="fullscreen-video">
           <source src={LightVideo} type="video/mp4"></source>
         </video>
         </div>
         <div className="DarkVideo-background">
-      <video autoPlay loop muted className="fullscreen-video">
+      <video controls={false} autoPlay loop muted className="fullscreen-video" >
           <source src={DarkVideo} type="video/mp4"></source>
         </video>
         </div>
         <NavBar />
         <Cursor />
         <Routes>
+          <Route path={"/"} element={<HomePage />} />
           <Route path={"/accueil"} element={<HomePage />} />
           <Route path={"/cv"} element={<CV />} />
           <Route path={"/mesprojets"} element={<MesProjets />} />

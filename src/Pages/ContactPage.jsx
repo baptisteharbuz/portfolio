@@ -9,7 +9,7 @@ const contact = () => {
                 <h1 className='h1-contact'>contact</h1>
                 <div className='line'></div>
                 <div className='number-container'>
-                    <h2 className='number'>06 18 12 53 30</h2>
+                <a className='number'href="tel:0618125330">06 18 12 53 30</a>
                 </div>
                 <div className='mail-container' onClick={() => window.location.href = "mailto:contact@baptisteharbuz.fr"}>
                     <h3 className='mail'>contact@baptisteharbuz.fr</h3>
