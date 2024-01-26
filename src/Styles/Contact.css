@@ -160,7 +160,14 @@
     width: 6rem;
 }
 
-@media (max-width: 1250px) {
+.txt-presentation {
+    border: solid 1px;
+    border-radius: 15px;
+    margin: 5rem 15rem 5rem 15rem;
+    padding: 5rem;
+}
+
+@media (max-width: 1000px) {
 
     .number,
     .mail,
@@ -174,9 +181,14 @@
         width: 2rem;
         height: 2rem;
     }
+
+    .txt-presentation {
+        margin: 1rem 1rem 10rem 1rem;
+        padding: 1rem;
+    }
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1000px) {
 
     .github-container:hover .contact-click,
     .linkedin-container:hover .contact-click {

@@ -82,8 +82,25 @@ display: none;
     width: 100%;
     margin: 1rem;
 }
-
+.enigme-evadees h2,
+.cafe-creme h2,
+.garçonne h2,
+.enigme-evadees h6,
+.cafe-creme h6,
+.garçonne h6 {
+padding-left: 5rem;
+padding-right: 5rem;
+}
 @media screen and (max-width: 1000px) {
+    .enigme-evadees h2,
+.cafe-creme h2,
+.garçonne h2,
+.enigme-evadees h6,
+.cafe-creme h6,
+.garçonne h6 {
+padding: 0;
+}
+
     .mesprojets-container {
         display: flex;
         height: 100vh;
@@ -139,8 +156,9 @@ padding-bottom: 15rem;
 .h1-wait {
     text-align: center;
     font-family: "danielbd";
-    transform: rotate(-10deg);
-    font-size: max(2vw, 20px);
+    /* transform: rotate(-10deg); */
+    font-size: max(1vw, 15px);
+    margin-top: 2rem;
 }
 
 .bloc-txt-projets-container {

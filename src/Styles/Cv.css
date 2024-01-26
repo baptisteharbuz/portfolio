@@ -368,6 +368,7 @@ h4 {
 /* ////////////////////////////////////HOVER */
 
 @media (max-width: 1250px) {
+
     .logo-html,
     .logo-css,
     .logo-js,
@@ -379,10 +380,11 @@ h4 {
         background-repeat: no-repeat;
         background-position: center; */
     }
-.cv{
-    height: 47vh;
 
-}
+    .cv {
+        height: 48vh;
+    }
+
     .exp-container {
         padding: 0;
     }
@@ -420,8 +422,8 @@ h4 {
     }
 
     .cv-right {
-position: relative;
-padding-bottom: 3rem;
+        position: relative;
+        padding-bottom: 2rem;
     }
 
     .competences-container {}
@@ -430,19 +432,22 @@ padding-bottom: 3rem;
         padding-right: 2vw;
         padding-left: 1vw;
     }
-    .exp-container{
+
+    .exp-container {
         padding-left: 1vw;
     }
+
     .txt-competences {
         padding-right: 4vw;
         padding-left: 1vw;
     }
+
     .red,
-.yellow,
-.green {
-    position: relative;
-left: 1rem;
-}
+    .yellow,
+    .green {
+        position: relative;
+        left: 1rem;
+    }
 }
 
 @media (min-width: 1250px) {

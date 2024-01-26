@@ -17,15 +17,18 @@
     .baptiste,
 .harbuz,
 .portfolio,
-.h4-homepage a {
+.h4-homepage a,
+.txt-presentation p {
     color: #25292E;;
 }
+
 }
 .dark {
     .baptiste,
 .harbuz,
 .portfolio,
-.h4-homepage a {
+.h4-homepage a,
+.txt-presentation p {
     color: white;
 }
 }
@@ -43,13 +46,13 @@ body {
 
 .h1-project,
 .h1-contact {
-    font-size: max(4vw, 20px);
+    font-size: max(3vw, 20px);
 }
 /* ///////////////////HOME PAGE */
 
 .h4-homepage a{
     font-family: "danielbd";
-    font-size: max(1.5vw, 7px);
+    font-size: max(1.5vw, 12px);
     text-decoration: none;
 }
 
@@ -78,7 +81,7 @@ z-index: 1;
 .harbuz {
     margin: 0;
     font-size: max(4vw, 30px);
-    
+    z-index: 1;
 }
 
 .portfolio {
@@ -111,8 +114,16 @@ p {
 font-family: "horizon" !important;
 transition: 0.3s;
 } */
+@media (max-width: 1000px) {
+    .txt-presentation p{
+        font-family: "RobotoMono-Regular" !important;
+        font-size: 1rem;
+        font-weight: 800;
+        text-align: justify;
+    }
+}
 
-@media (min-width: 1250px){
+@media (min-width: 1000px){
 /* .bloc-txt-projets h2,
 .bloc-txt-projets h2:hover, */
 .enigme-evadees:hover .h2-project,
@@ -124,9 +135,15 @@ transition: 0.3s;
     font-family: "horizon" !important;
     transition: 0.3s;
 }
+.txt-presentation p{
+    font-family: "RobotoMono-Regular" !important;
+    font-size: 0.8vw;
+    font-weight: 800;
+}
 }
 
 /* ///////////////////CONTACT PAGE */
 .number {
     font-size: max(0.8vw, 10px);
 }
+

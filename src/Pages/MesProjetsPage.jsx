@@ -5,7 +5,8 @@ import "../Styles/Texte.css";
 // VIDEOS
 import EnigmesEvadees from "../Assets/Videos/Enigmes-Evadees.mp4"
 import Garçonne from "../Assets/Videos/Garçonne-Accueil.mp4"
-
+// IMAGES
+import CafeCreme from "../Assets/Images/Presentation-Cafe-Creme.png"
 const Projets = () => {
     // const [enigmeEvadeesHovered, setEnigmeEvadeesHovered] = useState(false);
     // const [cafeCremeHovered, setCafeCremeHovered] = useState(false);
@@ -28,9 +29,16 @@ const Projets = () => {
                     </div>
                 )} {activeProject === 'cafeCreme' && (
                     <div className='videos-hovered2'>
-                        <div className='CafeCreme-Projet'>
-                            <h1 className='h1-wait'>En développemenent</h1>
-                        </div>
+<div className='CafeCreme-Projet'>
+    <img
+        style={{ width: '100%', height: '100%', objectFit: 'cover', zIndex: '1', borderRadius: '2vw' }}
+        src={CafeCreme}
+        ref={videoref1}
+        alt="Présentation Café Crème"
+        key="image"
+    />
+    <h1 className='h1-wait'>En développement</h1>
+</div>
                         <button>En voir plus</button>
                     </div>
                 )} {activeProject === 'garçonne' && (
