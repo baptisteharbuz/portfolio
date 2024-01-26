@@ -113,8 +113,8 @@ transition: 0.3s;
 } */
 
 @media (min-width: 1250px){
-.bloc-txt-projets h2,
-.bloc-txt-projets h2:hover,
+/* .bloc-txt-projets h2,
+.bloc-txt-projets h2:hover, */
 .enigme-evadees:hover .h2-project,
 .cafe-creme:hover .h2-project,
 .garçonne:hover .h2-project,

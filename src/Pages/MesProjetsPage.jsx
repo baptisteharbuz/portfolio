@@ -48,6 +48,7 @@ const Projets = () => {
                     <div className='line'></div>
                     <div
                         className='enigme-evadees'
+                        onMouseEnter={() => setActiveProject('enigmeEvadees')}
                         onClick={() => setActiveProject('enigmeEvadees')}
                     >
                         <h2 className='h2-project'>ENIGMEs EVADÉES</h2>
@@ -55,6 +56,7 @@ const Projets = () => {
                     </div>
                     <div
                         className='cafe-creme'
+                        onMouseEnter={() => setActiveProject('cafeCreme')}
                         onClick={() => setActiveProject('cafeCreme')}
                     >
                         <h2 className='h2-project'>CAFÉ CRÈME</h2>
@@ -62,6 +64,7 @@ const Projets = () => {
                     </div>
                     <div
                         className='garçonne'
+                        onMouseEnter={() => setActiveProject('garçonne')}
                         onClick={() => setActiveProject('garçonne')}
                     >
                         <h2 className='h2-project'>GARÇONNE</h2>

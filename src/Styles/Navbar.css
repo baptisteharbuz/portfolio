@@ -85,7 +85,7 @@
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  z-index: 2;
+  z-index: 3;
 }
 
 .menu-grid {
@@ -231,8 +231,11 @@
   .navbar {
     position:fixed;
     bottom: 0;
+    width: 100%;
     padding-bottom: 3rem;
   }
+
+
 
   .h5-menu {
     display: none;

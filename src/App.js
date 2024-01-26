@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import React from 'react';
 // Components
 import NavBar from './Components/NavbarComponent';
@@ -17,7 +17,7 @@ import DarkVideo from './Assets/Videos/bg-dark.mp4'
 function App() {
 
   return (
-    <BrowserRouter>
+    <HashRouter>
       <div>
       <div className="LightVideo-background">
       <video ontrols={false} autoPlay loop muted className="fullscreen-video">
@@ -41,7 +41,7 @@ function App() {
         </Routes>
       </div>
       <Grain />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 
