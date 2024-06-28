@@ -229,7 +229,7 @@
 /* /////////////////////////Hover */
 @media (max-width: 1000px) {
   .navbar {
-    position:fixed;
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding-bottom: 3rem;

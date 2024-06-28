@@ -18,28 +18,26 @@ const Projets = () => {
 
     return (
         <div className='mesprojets-container'>
-            {/* <div className='cards-projets'> */}
             <div className='bloc-projets'>
                 {activeProject === 'enigmeEvadees' && (
                     <div className='videos-hovered1'>
                         <video autoPlay loop muted playsInline style={{ width: '100%', height: '100%', objectFit: 'cover', borderRadius: '2vw' }} key='video1'>
                             <source ref={videoref1} src={EnigmesEvadees} type="video/mp4" key={"video3"} />
                         </video>
-                        <button onClick={() => window.open("https://github.com/baptisteharbuz/portfolio", "_blank", "noopener,noreferrer")}>En voir plus</button>
+                        <button onClick={() => window.open("https://github.com/baptisteharbuz/Escape_Game", "_blank", "noopener,noreferrer")}>En voir plus</button>
                     </div>
                 )} {activeProject === 'cafeCreme' && (
                     <div className='videos-hovered2'>
-<div className='CafeCreme-Projet'>
-    <img
-        style={{ width: '100%', height: '100%', objectFit: 'cover', zIndex: '1', borderRadius: '2vw' }}
-        src={CafeCreme}
-        ref={videoref1}
-        alt="Présentation Café Crème"
-        key="image"
-    />
-    <h1 className='h1-wait'>En développement</h1>
-</div>
-                        <button>En voir plus</button>
+                        <div className='CafeCreme-Projet'>
+                            <img
+                                style={{ width: '100%', height: '100%', objectFit: 'cover', zIndex: '1', borderRadius: '2vw' }}
+                                src={CafeCreme}
+                                ref={videoref1}
+                                alt="Présentation Café Crème"
+                                key="image"
+                            />
+                        </div>
+                        <button onClick={() => window.open("https://github.com/baptisteharbuz/Cafe-Creme", "_blank", "noopener,noreferrer")}>En voir plus</button>
                     </div>
                 )} {activeProject === 'garçonne' && (
                     <div className='videos-hovered3'>

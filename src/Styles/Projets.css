@@ -4,19 +4,22 @@
     .h1-wait,
     .h2-project,
     .bloc-txt-projets {
-        color: #25292E;;
+        color: #25292E;
+        ;
     }
 
     .line {
-        background-color: #25292E;;
+        background-color: #25292E;
+        ;
     }
 
     .videos-hovered1 button,
-.videos-hovered3 button{
-    border: solid #25292E;
-    background-color: #ffffff00;
-    color: #25292E;
-}
+    .videos-hovered2 button,
+    .videos-hovered3 button {
+        border: solid #25292E;
+        background-color: #ffffff00;
+        color: #25292E;
+    }
 }
 
 .dark {
@@ -30,8 +33,10 @@
     .line {
         background-color: white;
     }
+
     .videos-hovered1 button,
-    .videos-hovered3 button{
+    .videos-hovered2 button,
+    .videos-hovered3 button {
         border: solid #ffffff;
         background-color: #ffffff00;
         color: #ffffff;
@@ -47,9 +52,10 @@
     height: 100vh;
     /* flex-wrap: wrap; */
 }
+
 .videos-hovered1,
 .videos-hovered2,
-.videos-hovered3{
+.videos-hovered3 {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -61,18 +67,14 @@
 
 .videos-hovered1 button,
 .videos-hovered2 button,
-.videos-hovered3 button{
+.videos-hovered3 button {
     margin-top: 2rem;
     border-radius: 0.6rem;
-    width: 20rem;
+    width: 23rem;
     height: 4rem;
 }
 
-.videos-hovered2 button{
-display: none;
-}
-
-.CafeCreme-Projet{
+.CafeCreme-Projet {
     border-radius: 0 2vw 2vw 0;
 }
 
@@ -82,33 +84,36 @@ display: none;
     width: 100%;
     margin: 1rem;
 }
+
 .enigme-evadees h2,
 .cafe-creme h2,
 .garçonne h2,
 .enigme-evadees h6,
 .cafe-creme h6,
 .garçonne h6 {
-padding-left: 5rem;
-padding-right: 5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
 }
+
 @media screen and (max-width: 1000px) {
+
     .enigme-evadees h2,
-.cafe-creme h2,
-.garçonne h2,
-.enigme-evadees h6,
-.cafe-creme h6,
-.garçonne h6 {
-padding: 0;
-}
+    .cafe-creme h2,
+    .garçonne h2,
+    .enigme-evadees h6,
+    .cafe-creme h6,
+    .garçonne h6 {
+        padding: 0;
+    }
 
     .mesprojets-container {
         display: flex;
-        height: 100vh;
+        height: 120vh;
         flex-direction: column-reverse;
         justify-content: flex-end;
         align-items: center;
         width: 100vw;
-padding-bottom: 15rem;
+
 
     }
 
@@ -123,13 +128,13 @@ padding-bottom: 15rem;
     }
 
     .enigme-evadees,
-.cafe-creme,
-.garçonne {
-    border: solid 1px;
-    border-radius: 0.6rem;
-    width: 100%;
-    margin: 1rem;
-}
+    .cafe-creme,
+    .garçonne {
+        border: solid 1px;
+        border-radius: 0.6rem;
+        width: 100%;
+        margin: 1rem;
+    }
 
 }
 
@@ -196,11 +201,13 @@ padding-bottom: 15rem;
     padding: 3vw;
     transition: 0.3s;
 }
-@media (min-width: 1250px){
-.enigme-evadees:hover,
-.cafe-creme:hover,
-.garçonne:hover {
-    transform: scale(1.2);
-    transition: 0.3s;
-}
+
+@media (min-width: 1250px) {
+
+    .enigme-evadees:hover,
+    .cafe-creme:hover,
+    .garçonne:hover {
+        transform: scale(1.2);
+        transition: 0.3s;
+    }
 }

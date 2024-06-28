@@ -12,25 +12,34 @@
     font-family: "danielbd";
     src: url('../Assets/Fonts/danielbd.ttf')
 }
-/* ///////////////////DARK & LIGHT */
-.light{
-    .baptiste,
-.harbuz,
-.portfolio,
-.h4-homepage a,
-.txt-presentation p {
-    color: #25292E;;
+
+html {
+    font-size: 62.5%;
 }
 
-}
-.dark {
+/* ///////////////////DARK & LIGHT */
+.light {
+
     .baptiste,
-.harbuz,
-.portfolio,
-.h4-homepage a,
-.txt-presentation p {
-    color: white;
+    .harbuz,
+    .portfolio,
+    .h4-homepage a,
+    .txt-presentation p {
+        color: #25292E;
+        ;
+    }
+
 }
+
+.dark {
+
+    .baptiste,
+    .harbuz,
+    .portfolio,
+    .h4-homepage a,
+    .txt-presentation p {
+        color: white;
+    }
 }
 
 body {
@@ -48,9 +57,10 @@ body {
 .h1-contact {
     font-size: max(3vw, 20px);
 }
+
 /* ///////////////////HOME PAGE */
 
-.h4-homepage a{
+.h4-homepage a {
     font-family: "danielbd";
     font-size: max(1.5vw, 12px);
     text-decoration: none;
@@ -60,23 +70,26 @@ body {
     z-index: 1;
     transition: 0.3s;
 }
-@media (min-width: 1250px){
-.h4-homepage:hover {
-    transform: scale(1.2) rotate(-5deg);
-    transition: 0.3s;
-    text-decoration: none;
+
+@media (min-width: 1250px) {
+    .h4-homepage:hover {
+        transform: scale(1.2) rotate(-5deg);
+        transition: 0.3s;
+        text-decoration: none;
+    }
 }
-}
+
 .txt-home {
     display: flex;
     flex-direction: column;
     align-items: center;
-z-index: 1;
+    z-index: 1;
 }
 
 .baptiste {
     font-family: "horizon_outlined" !important;
 }
+
 .baptiste,
 .harbuz {
     margin: 0;
@@ -94,11 +107,13 @@ z-index: 1;
     text-align: center;
     padding-left: max(3vw, 20px);
 }
+
 /* ///////////////////CV PAGE */
-h3,
+/* h3,
 p {
     color: #25292E;
-}
+} */
+
 /* ///////////////////PROJET PAGE */
 .bloc-txt-projets h2 {
     font-family: "horizon_outlined" !important;
@@ -110,40 +125,41 @@ p {
     text-align: right;
     font-size: max(0.6vw, 7px);
 }
+
 /* .bloc-txt-projets h2::after {
 font-family: "horizon" !important;
 transition: 0.3s;
 } */
 @media (max-width: 1000px) {
-    .txt-presentation p{
-        font-family: "RobotoMono-Regular" !important;
+    /* .txt-presentation p {
         font-size: 1rem;
         font-weight: 800;
         text-align: justify;
-    }
+    } */
 }
 
-@media (min-width: 1000px){
-/* .bloc-txt-projets h2,
+@media (min-width: 1000px) {
+
+    /* .bloc-txt-projets h2,
 .bloc-txt-projets h2:hover, */
-.enigme-evadees:hover .h2-project,
-.cafe-creme:hover .h2-project,
-.garçonne:hover .h2-project,
-.enigme-evadees:hover .h6-project,
-.cafe-creme:hover .h6-project,
-.garçonne:hover .h6-project {
-    font-family: "horizon" !important;
-    transition: 0.3s;
-}
-.txt-presentation p{
-    font-family: "RobotoMono-Regular" !important;
-    font-size: 0.8vw;
-    font-weight: 800;
-}
+    .enigme-evadees:hover .h2-project,
+    .cafe-creme:hover .h2-project,
+    .garçonne:hover .h2-project,
+    .enigme-evadees:hover .h6-project,
+    .cafe-creme:hover .h6-project,
+    .garçonne:hover .h6-project {
+        font-family: "horizon" !important;
+        transition: 0.3s;
+    }
+
+    /* .txt-presentation p {
+        font-size: 0.8vw;
+        font-weight: 800;
+        text-align: justify;
+    } */
 }
 
 /* ///////////////////CONTACT PAGE */
-.number {
+/* .number {
     font-size: max(0.8vw, 10px);
-}
-
+} */
