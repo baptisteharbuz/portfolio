@@ -1,169 +1,234 @@
 import React from 'react';
 import "../Styles/Cv.css"
+import picture from "../Assets/Images/Baptiste Harbuz Photo.jpg"
 
 const cv = () => {
     return (
-        <div className='cv-container'>
-            <div className='cv'>
-                <div className='cv-title'>
-                    <div className='txt-name'>
-                        <h1 className='baptiste-cv'>BAPTISTE</h1>
-                        <h1 className='harbuz-cv'>HARBUZ</h1>
-                    </div>
-                    <h3 className='h3-cv'>DÉVELOPPEUR WEB & WEB MOBILE</h3>
-                </div>
-                {/* <div className='div-container'> */}
-                <div className='cv-left'>
-                    <div className='orange-up'>
-                        <div className='red'></div>
-                        <div className='yellow'></div>
-                        <div className='green'></div>
-                        <div className='picture-container'>
-                            <div className='picture-cv'>
-                            </div>
-                        </div>
-                    </div>
+        <div className='container'>
+            <div className='resume-container'>
+                <div className='resume-part-1'>
+                    <img className='profil' src={picture} alt="Baptiste Harbuz" />
 
-                    <div className='yellow-down'>
-                        <div className='beside-picture'></div>
-                        <div className='profil'>
-                            <h2 className='h2-cv'>PROFIL</h2>
-                            <p className='p-cv'>31 ans</p>
-                            <p className='p-cv'><b>Permis B</b></p>
-                            <p className='p-cv'>Véhicule</p>
-                            <p className='p-cv'><b>06 18 12 53 30</b></p>
-                            <p className='p-cv'>contact@baptisteharbuz.fr</p>
-                            <div className='lien-cv'>
-                            <div className='Logo-Linkedin-Cv'></div>
-                            <p className='p-cv'><b>baptiste-harbuz</b></p>
-                            </div>
+                    <section className='profil-container'>
+                        <h2>PROFIL</h2>
+                        <div>
+                            <p><b>Permis B</b></p>
+                            <p>Véhiculé</p>
+                            <p><b>06 18 12 53 30</b></p>
+                            <p><b>contact@baptisteharbuz.fr</b></p>
+                            <section>
+                                <div className='link-logo'>
+                                    <div class="logo linkedin"></div>
+                                    <p><b>Linkedin : baptiste-harbuz</b></p>
+                                </div>
+                                <div className='link-logo'>
+                                    <div class="logo github"></div>
+                                    <p><b>GitHub : baptisteharbuz</b></p>
+                                </div>
+                                <div className='link-logo'>
+                                    <div class="logo portfolio"></div>
+                                    <p><b>Portfolio : baptisteharbuz.fr</b></p>
+                                </div>
+                            </section>
                         </div>
-                        <div className='formation'>
-                            <h2 className='h2-cv'>FORMATIONS</h2>
-                            <p className='p-cv'><b>Développeur Web & Web Mobile</b></p>
-                            <p className='p-cv'>Bac +2</p>
-                            <p className='p-cv'>ForEach Academy</p>
-                            <p className='p-cv'>2023 - 2024 <b>EN COURS</b></p>
-                            <div className='logo-formations'>
-                                <div className='logo'>
-                                    <div className='logo-html'></div>
-                                    <h6 className='h6-cv'>HTML</h6>
-                                </div>
-                                <div className='logo'>
-                                    <div className='logo-css'></div>
-                                    <h6 className='h6-cv'>CSS</h6>
-                                </div>
-                                <div className='logo'>
-                                    <div className='logo-js'></div>
-                                    <h6 className='h6-cv'>JAVASCRIPT</h6>
-                                </div>
-                                <div className='logo'>
-                                    <div className='logo-react'></div>
-                                    <h6 className='h6-cv'>REACT</h6>
-                                </div>
-                                <div className='logo'>
-                                    <div className='logo-node'></div>
-                                    <h6 className='h6-cv'>NODE</h6>
-                                </div>
-                            </div>
-                            <p className='p-cv'><b>Accueil Relation Client Usager</b></p>
-                            <p className='p-cv'>Baccalauréat Professionnel</p>
-                            <p className='p-cv'>Lycée Deforest de Lewarde</p>
-                            <p className='p-cv'>2012</p>
+                    </section>
+
+                    <section className='training-container'>
+                        <h2>FORMATION</h2>
+                        <div>
+                            <p><b>Concepteur Développeur d'Application Bac + 4</b></p>
+                            <p>2024 - 2026 / ForEach Academy</p>
+                            <ul>
+                                <li>Java / Spring, Dart / Flutter</li>
+                                <li>Vue.js / Vite / Nuxt, Typescript</li>
+                                <li>API REST</li>
+                                <li>Docker, Google Cloud Platform, pratiques Devops</li>
+                            </ul>
                         </div>
-                        <div className='centres dinteret'>
-                            <h2 className='h2-cv'>CENTRES D'INTERÊT</h2>
-                            <div className='txt-centre-dinteret'>
-                                <p className='p-cv'><b>MUSIQUE :</b> Production musicale professionnelle depuis 2017
-                                    Compositeur, arrangeur
-                                    "Guitare, Basse, Clavier, M.A.O"</p>
-                            </div>
-                            <div className='txt-centre-dinteret'>
-                                <p className='p-cv'><b>GRAPHISME :</b> Image & Vidéo (Monteur, Cadreur, Graphiste, Web designer, Motion designer)</p>
-                            </div>
+                        <div>
+                            <p><b>Développeur Web & Web Mobile Bac + 2</b></p>
+                            <p>2023 - 2024 / ForEach Academy</p>
                         </div>
-                    </div>
+                        <div>
+                            <p><b>Baccalauréat Professionnel</b></p>
+                            <p>Spécialité Acceuil Relation Client Usager</p>
+                            <p>2012 / Lycée Deforest de Lewarde</p>
+                        </div>
+                    </section>
+                    <section className='interest-container'>
+                        <h2>CENTRE D'INTÉRÊT</h2>
+                        <p><b>MUSIQUE : </b> Production, composition, arrangements (Guitare, Basse, Clavier, M.A.O)</p>
+                        <p><b>GRAPHISME : </b>Image & Vidéo (Monteur, Cadreur, Graphiste, Web design, Motion design)</p>
+                    </section>
                 </div>
 
-                <div className='cv-right'>
-                    <div className='up-cv'>
-                        <p className='p-cv'>En tant qu'aspirant <b>développeur web</b>, Je suis convaincu que ma créativité, mon esprit d'analyse et ma capacité à communiquer sont des atouts précieux pour réussir dans ce domaine.
-                            En cours de validation pour mon diplôme <b>bac +2 Développeur Web & Web Mobile</b>, je suis déterminé à apprendre et à me perfectionner d’avantage dans ce domaine. Ma passion pour l'IT et ma curiosité insatiable me permettrons d'acquérir les connaissances nécessaires en matière de programmation et de développement web afin de devenir opérationnel</p>
-                    </div>
-                    <div className='competences-container'>
-                        <div className='competences'>
-                            <h2 className='h2-cv'>COMPÉTENCES</h2>
+                <div className='resume-part-2'>
+                    <section className='intro'>
+                        <h1>BAPTISTE HARBUZ</h1>
+                        <h2>Concepteur développeur d'application</h2>
+                        <p>Passionné par les technologies de l’information et disposant de compétences solides en full stack, je souhaite mettre à profit ma créativité et mon esprit d'analyse pour la réalisation de vos projets</p>
+                    </section>
+
+                    <section className='skills-container'>
+                        <div>
+                            <h2>Hard Skills</h2>
+                            <ul>
+                                <li>Développement front end</li>
+                                <li>Développement back end</li>
+                                <li>Méthodes agiles</li>
+                                <li>Gestion de projet</li>
+                                <li>Gestion de base de donées</li>
+                            </ul>
                         </div>
-                        <div className='txt-competences'>
-                            <p className='p-cv'><b>• FRONT-END :</b> Maîtrise des langages <b>HTML</b>, <b>CSS</b> et <b>JavaScript</b> pour la création et la personnalisation de l'interface utilisateur. Maîtrise du framework <b>React</b> pour le développement d'applications web interactives et réactives</p>
-                            <p className='p-cv'><b>• BACK-END :</b> Gestion et conception de bases de données avec <b>MySQL</b>. Maîtrise du framework <b>Node.js</b> pour le développement côté serveur</p>
-                            <p className='p-cv'><b>•</b> Coordination et conception de contenus visuels innovants en intégrant infographies, textes, images, illustrations, vidéos, GIF, etc. Planification et réalisation de divers contenus</p>
-                            <p className='p-cv'><b>•</b> Maitrise des logiciels de la suite <b>Adobe</b> (Photoshop, Illustrator, Indesign, After Effect, Premiere Pro)</p>
+                        <div>
+                            <h2>Soft Skills</h2>
+                            <ul>
+                                <li>Communication</li>
+                                <li>Travail en équipe</li>
+                                <li>Autonomie</li>
+                                <li>Adaptabilité</li>
+                                <li>Curiosité</li>
+                            </ul>
                         </div>
-                    </div>
-                    <div className='experiences-container'>
-                        <div className='experiences'>
-                            <h2 className='h2-cv'>EXPÉRIENCE</h2>
-                        </div>
-                        <div className='exp-container'>
-                            <div className='detail-txt-container'>
-                                <div className='title-experience'>
-                                    <h4 className='h4-cv'>LIVREUR</h4>
-                                    <p className='p-cv'>Place du marché</p>
-                                    <p className='p-cv'>2023-2021</p>
-                                </div>
-                                <div className='txt-experience'>
-                                    <p className='p-cv'>Livraison de produits alimentaires dans les Hauts de France. Fidélisation client et ventes complémentaires </p>
-                                </div>
+                    </section>
+
+                    <section className='skills-and-projects'>
+                        <h2>Compétences & Projets</h2>
+                        <section>
+                            <div>
+                                <ul>
+                                    <li>Front-end :</li>
+                                </ul>
+                                <ul>
+                                    <li>- Javascript</li>
+                                    <li>- React, React Native</li>
+                                    <li>- HTML, CSS, SCSS, SASS</li>
+                                </ul>
                             </div>
-                            <div className='detail-txt-container'>
-                                <div className='title-experience'>
-                                    <h4 className='h4-cv'>RÉGISSEUR SPECTACLE</h4>
-                                    <p className='p-cv'>Ville de Roubaix</p>
-                                    <p className='p-cv'>2019-2018</p>
-                                </div>
-                                <div className='txt-experience'>
-                                    <p className='p-cv'>Régisseur son et lumière. Accueil des artistes, coordination technique, gestion des équipements, garant de la qualité sonore et visuelle</p>
-                                </div>
+                            <div>
+                                <ul>
+                                    <li>Back-end</li>
+                                </ul>
+                                <ul>
+                                    <li>- Node.js</li>
+                                    <li>- Express.js</li>
+                                    <li>- PHP</li>
+                                </ul>
                             </div>
-                            <div className='detail-txt-container'>
-                                <div className='title-experience'>
-                                    <h4 className='h4-cv'>COMMERCIAL & CHARGÉE DE RELATION CLIENT</h4>
-                                    <p className='p-cv'>TEMPO Service</p>
-                                    <p className='p-cv'>2017-2016</p>
-                                </div>
-                                <div className='txt-experience'>
-                                    <p className='p-cv'>Développement du portefeuille client par la prospection et la négociation. Gestion intégrale du cycle professionnel, de la sélection des collaborateurs par entretien au placement réussi des postes avec les clients partenaires</p>
-                                </div>
+                            <div>
+                                <ul>
+                                    <li>Base de données :</li>
+                                </ul>
+                                <ul>
+                                    <li>- SQL (MYSQL, PostgreSQL)</li>
+                                    <li>- Workbench, DBeaver</li>
+                                    <li>- Dbdiagram.io</li>
+                                </ul>
                             </div>
-                            <div className='detail-txt-container'>
-                                <div className='title-experience'>
-                                    <h4 className='h4-cv'>ÉLECTRICIEN</h4>
-                                    <p className='p-cv'>GARDSEC LTD LONDRES</p>
-                                    <p className='p-cv'>2016</p>
-                                </div>
-                                <div className='txt-experience'>
-                                    <p className='p-cv'>Installation d’alarmes et de système de vidéo surveillance chez les professionnels et particuliers à Londres </p>
-                                </div>
+                            <div>
+                                <ul>
+                                    <li>Gestion de projet :</li>
+                                </ul>
+                                <ul>
+                                    <li>- Git & GitHub</li>
+                                    <li>- Agile</li>
+                                    <li>- Kanban</li>
+                                    <li>- Notion / Slack</li>
+                                </ul>
                             </div>
-                            <div className='detail-txt-container'>
-                                <div className='title-experience'>
-                                    <h4 className='h4-cv'>VENDEUR</h4>
-                                    <p className='p-cv'>Star Folies</p>
-                                    <p className='p-cv'>Air Music</p>
-                                    <p className='p-cv'>Chauss Expo</p>
-                                    <p className='p-cv'>2016-2013</p>
-                                </div>
-                                <div className='txt-experience'>
-                                    <p className='p-cv'>Accueil et gestion de la relation client, techniques de merchandising, découverte des besoins et des motivations d’achat, proposition commerciale et argumentation</p>
-                                </div>
+                            <div>
+                                <ul>
+                                    <li><b>Café Crème -&gt; </b>Projet from scratch, vente de cagé en ligne (Projet d'étude).</li>
+                                    <li><b>Énigme Évadés -&gt; </b>Site de réservation pour un Escape Game (Projet d’étude).</li>
+                                    <li><b>L’infiltré -&gt; </b>Jeux de société mobile développé avec React Native.</li>
+                                    <li><b>Portfolio -&gt; </b>Développé en React / HTML / CSS / SCSS.</li>
+                                </ul>
                             </div>
-                        </div>
-                    </div>
+                        </section>
+                    </section>
+
+                    <section className='experience-container'>
+                        <h2>Expériences</h2>
+                        <section>
+                            <div>
+                                <h3>Développeur</h3>
+                                <h3>Full Stack</h3>
+                                <p>Dealinka</p>
+                                <p>2024 - Actuel</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Développement de la base de données.</li>
+                                    <li>Développement back end.</li>
+                                    <li>Développement front end.</li>
+                                    <li>Mise en production.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <h3>Développeur</h3>
+                                <h3>back end</h3>
+                                <p>Elise</p>
+                                <p>2024</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Gestion des tickets de maintenance.</li>
+                                    <li>Développement de nouvelles fonctionnalités.</li>
+                                    <li>Méthodes agiles (<b>Kanban</b>).</li>
+                                    <li>Initiation au langage <b>Ruby</b> et <b>Ruby on Rails</b>.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <h3>Livreur</h3>
+                                <p>Place du marché</p>
+                                <p>2021 - 2023</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Livraison de produits alimentaires.</li>
+                                    <li>Fidélisation des clients.</li>
+                                    <li>Vente de produits complémentaire.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <h3>Régisseur Spéctacle</h3>
+                                <p>Ville de Roubaix</p>
+                                <p>2018 - 2017</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Accueil des artistes.</li>
+                                    <li>Coordination technique, gestion des équipements.</li>
+                                    <li>Garant de la qualité sonore et visuelle.</li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section>
+                            <div>
+                                <h3>Commercial & Chargé </h3>
+                                <h3>de relation client</h3>
+                                <p>TEMPO Service</p>
+                                <p>2016 - 2017</p>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>Développement du portefeuille client.</li>
+                                    <li>BtoB / BtoC.</li>
+                                    <li>Recrutement des collaborateurs</li>
+                                    <li>Gestion clients / collaborateurs</li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
                 </div>
             </div>
         </div>
-        // </div>
     )
 }
 
