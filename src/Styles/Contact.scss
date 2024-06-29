@@ -1,3 +1,6 @@
+@import '../Styles/Style.scss';
+@import '../Styles/Texte.scss';
+
 /* ///////////////////DARK & LIGHT */
 .light {
 
@@ -7,8 +10,7 @@
     .mail-container,
     .contact-item h2,
     .txt-presentation span {
-        color: #25292E;
-        ;
+        @include black;
     }
 
     .txt-presentation {
@@ -21,7 +23,7 @@
     }
 
     .icons {
-        color: #25292E;
+        @include black;
     }
 }
 
@@ -33,7 +35,7 @@
     .contact-click,
     .contact-item h2,
     .txt-presentation span {
-        color: white;
+        @include white;
     }
 
     .txt-presentation {
@@ -45,25 +47,21 @@
     }
 
     .icons {
-        color: white;
+        @include white;
     }
 }
 
 .contact-container {
-    display: flex;
+    @include center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     gap: 1rem;
 }
 
 .contact-container section {
     text-align: center;
     z-index: 1;
-    display: flex;
+    @include center;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     height: 100vh;
 }
 
@@ -92,22 +90,19 @@
     position: relative;
 }
 
-/* Style pour les icônes */
 .icons {
     font-size: 2rem;
     justify-self: center;
 }
 
-/* Style pour le texte principal */
 .contact-item h2 {
     margin: 0;
     justify-self: center;
 
 }
 
-/* Style pour le texte "Click !" */
 .contact-click {
-    font-family: "danielbd";
+    @include danielbd;
     font-size: max(1.5rem, 15px);
     position: absolute;
     left: 50%;
@@ -115,18 +110,18 @@
     opacity: 0;
 }
 
-/* Apparition du texte "Click !" lors du survol */
-.contact-item:hover .contact-click {
-    opacity: 1;
-    transform: translateX(0);
-    transition: opacity 1s, transform 5s;
-    grid-column: 3 / 4;
-    justify-self: center;
-}
+@media (min-width: 1000px) {
+    .contact-item:hover .contact-click {
+        opacity: 1;
+        transform: translateX(0);
+        transition: opacity 1s, transform 5s;
+        grid-column: 3 / 4;
+        justify-self: center;
+    }
 
-/* Changement de la couleur de fond au survol */
-.contact-item:hover {
-    transform: scale(1.2);
+    .contact-item:hover {
+        transform: scale(1.2);
+    }
 }
 
 .txt-presentation {
@@ -136,10 +131,30 @@
 }
 
 .txt-presentation span {
-    font-family: 'TT Chocolates', sans-serif;
-    font-size: 1rem;
+    @include tt_chocolates;
+    font-size: 1.3rem;
     font-weight: 800;
     text-align: justify;
+}
+
+@media (max-width: 1000px) {
+    .txt-presentation {
+        margin: 2rem;
+        padding: 3rem;
+    }
+
+    .txt-presentation span {
+        font-size: 1rem;
+    }
+
+    .contact-item {
+        width: 90vw;
+    }
+
+    .contact-item h2 {
+        font-size: 0.9rem;
+
+    }
 }
 
 /* @media (max-width: 1000px) {

@@ -1,11 +1,13 @@
+@import '../Styles/Style.scss';
+@import '../Styles/Texte.scss';
+
 /* ///////////////////DARK & LIGHT */
 .light {
 
   .nav-list li a,
   .click,
   .h5-menu {
-    color: #25292E;
-    ;
+    @include black;
   }
 
   .nav-list li a:before {
@@ -44,7 +46,7 @@
   .nav-list li a,
   .click,
   .h5-menu {
-    color: white;
+    @include white;
   }
 
   .nav-list li a:before {
@@ -99,10 +101,8 @@
 .nav-list {
   position: fixed;
   z-index: 2;
-  display: flex;
+  @include center;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   top: 0;
   left: 0;
   margin: 0;
@@ -130,7 +130,7 @@
 }
 
 .nav-list li a {
-  font-family: "horizon_outlined" !important;
+  @include horizon_outlined;
   text-decoration: none;
   font-size: max(2vw, 20px);
   padding: 15px 20px;
@@ -145,9 +145,7 @@
   top: 50%;
   left: 40%;
   transform: translate(-50%, -50%);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include center;
   font-size: 2em;
   opacity: 0;
   font-weight: 900;
@@ -189,7 +187,7 @@
 }
 
 .click {
-  font-family: "danielbd";
+  @include danielbd;
   font-size: max(1.5rem, 15px);
   align-items: center;
   opacity: 0;
@@ -201,7 +199,7 @@
 
 
 .h5-menu {
-  font-family: "horizon" !important;
+  @include horizon;
   font-size: max(1.5rem, 10px);
   transition: 0.3s;
   align-items: center;
@@ -279,7 +277,7 @@
 
 @media (min-width: 1000px) {
   .nav-list a:hover {
-    font-family: "horizon" !important;
+    @include horizon;
     padding-right: 10vw;
   }
 
@@ -298,7 +296,6 @@
     padding-left: 1vw;
     transform: rotate(-5deg);
     z-index: 0;
-    /* top: 2rem; */
   }
 
   .logo-menu:hover {

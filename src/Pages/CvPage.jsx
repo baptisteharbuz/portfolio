@@ -1,5 +1,5 @@
 import React from 'react';
-import "../Styles/Cv.css"
+import "../Styles/Cv.scss"
 import picture from "../Assets/Images/Baptiste Harbuz Photo.jpg"
 
 const cv = () => {
@@ -73,11 +73,11 @@ const cv = () => {
                         <div>
                             <h2>Hard Skills</h2>
                             <ul>
-                                <li>Développement front end</li>
-                                <li>Développement back end</li>
-                                <li>Méthodes agiles</li>
-                                <li>Gestion de projet</li>
                                 <li>Gestion de base de donées</li>
+                                <li>Développement back end</li>
+                                <li>Développement front end</li>
+                                <li>Gestion de projet</li>
+                                <li>Méthodes agiles</li>
                             </ul>
                         </div>
                         <div>
@@ -138,7 +138,7 @@ const cv = () => {
                             </div>
                             <div>
                                 <ul>
-                                    <li><b>Café Crème -&gt; </b>Projet from scratch, vente de cagé en ligne (Projet d'étude).</li>
+                                    <li><b>Café Crème -&gt; </b>Projet from scratch, vente de café en ligne (Projet d'étude).</li>
                                     <li><b>Énigme Évadés -&gt; </b>Site de réservation pour un Escape Game (Projet d’étude).</li>
                                     <li><b>L’infiltré -&gt; </b>Jeux de société mobile développé avec React Native.</li>
                                     <li><b>Portfolio -&gt; </b>Développé en React / HTML / CSS / SCSS.</li>

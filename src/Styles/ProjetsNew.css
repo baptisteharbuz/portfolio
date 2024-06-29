@@ -90,7 +90,7 @@ main {
     height: 100vh;
 }
 
-.cards-projets{
+.cards-projets {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -98,6 +98,7 @@ main {
     width: 100%;
     height: 100%;
 }
+
 .bloc-projets {
     object-fit: cover;
     aspect-ratio: 16 / 9;
@@ -120,6 +121,7 @@ main {
     flex-wrap: wrap;
 
 }
+
 .bloc-txt-projets {
     color: rgb(255, 255, 255);
     padding: 20px 20px 20px 0;
@@ -131,17 +133,18 @@ main {
     align-content: space-around;
     align-items: center;
 }
+
 .bloc-projets,
 .bloc-txt-projets-container {
-/* position: relative; */
-width: 40rem;
-height: 500px;
-margin: 10px;
-overflow: hidden;
-border: solid 1px #F8FCDA;
-transition: transform 0.3s ease, box-shadow 0.3s ease;
-margin: 0;
-position: relative;
+    /* position: relative; */
+    width: 40rem;
+    height: 500px;
+    margin: 10px;
+    overflow: hidden;
+    border: solid 1px #F8FCDA;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 0;
+    position: relative;
 }
 
 

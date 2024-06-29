@@ -1,5 +1,5 @@
 import { Link, useNavigate } from 'react-router-dom';
-import '../Styles/Navbar.css'
+import '../Styles/Navbar.scss'
 import { useState, useEffect, } from 'react';
 
 const Navbar = () => {

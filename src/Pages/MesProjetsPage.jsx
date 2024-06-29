@@ -1,7 +1,7 @@
 import React, { useRef, useState } from 'react';
 // STYLES
-import "../Styles/Projets.css";
-import "../Styles/Texte.css";
+import "../Styles/Projets.scss";
+import "../Styles/Texte.scss";
 // VIDEOS
 import EnigmesEvadees from "../Assets/Videos/Enigmes-Evadees.mp4"
 import Garçonne from "../Assets/Videos/Garçonne-Accueil.mp4"

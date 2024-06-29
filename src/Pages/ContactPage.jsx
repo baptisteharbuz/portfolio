@@ -1,5 +1,5 @@
 import React from 'react';
-import '../Styles/Contact.css'
+import '../Styles/Contact.scss'
 import { BsFillTelephoneFill, BsEnvelope, BsLinkedin, BsGithub } from "react-icons/bs";
 
 const contact = () => {

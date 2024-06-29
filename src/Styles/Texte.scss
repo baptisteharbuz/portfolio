@@ -1,3 +1,5 @@
+@import '../Styles/Style.scss';
+
 @font-face {
     font-family: "horizon";
     src: url('../Assets/Fonts/horizon.otf') format('opentype');
@@ -13,6 +15,22 @@
     src: url('../Assets/Fonts/danielbd.ttf')
 }
 
+@mixin horizon {
+    font-family: 'horizon';
+}
+
+@mixin horizon_outlined {
+    font-family: 'horizon_outlined';
+}
+
+@mixin danielbd {
+    font-family: 'danielbd';
+}
+
+@mixin tt-chocolates {
+    font-family: 'TT Chocolates', sans-serif;
+}
+
 html {
     font-size: 62.5%;
 }
@@ -25,7 +43,7 @@ html {
     .portfolio,
     .h4-homepage a,
     .txt-presentation p {
-        color: #25292E;
+        @include black;
         ;
     }
 
@@ -38,18 +56,18 @@ html {
     .portfolio,
     .h4-homepage a,
     .txt-presentation p {
-        color: white;
+        @include white;
     }
 }
 
 body {
-    font-family: "horizon";
+    @include horizon;
 }
 
 .videos-hovered1 button,
 .videos-hovered2 button,
 .videos-hovered3 button {
-    font-family: "horizon";
+    @include horizon;
     font-size: max(0.6vw, 7px);
 }
 
@@ -61,7 +79,7 @@ body {
 /* ///////////////////HOME PAGE */
 
 .h4-homepage a {
-    font-family: "danielbd";
+    @include danielbd();
     font-size: max(1.5vw, 12px);
     text-decoration: none;
 }
@@ -87,7 +105,7 @@ body {
 }
 
 .baptiste {
-    font-family: "horizon_outlined" !important;
+    @include horizon_outlined;
 }
 
 .baptiste,
@@ -116,7 +134,7 @@ p {
 
 /* ///////////////////PROJET PAGE */
 .bloc-txt-projets h2 {
-    font-family: "horizon_outlined" !important;
+    @include horizon_outlined;
     text-align: left;
     font-size: max(1.2vw, 15px);
 }
@@ -148,7 +166,7 @@ transition: 0.3s;
     .enigme-evadees:hover .h6-project,
     .cafe-creme:hover .h6-project,
     .garçonne:hover .h6-project {
-        font-family: "horizon" !important;
+        @include horizon;
         transition: 0.3s;
     }
 

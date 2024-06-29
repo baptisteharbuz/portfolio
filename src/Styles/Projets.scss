@@ -1,10 +1,13 @@
+@import '../Styles/Style.scss';
+@import '../Styles/Texte.scss';
+
 /* ///////////////////DARK & LIGHT */
 .light {
 
     .h1-wait,
     .h2-project,
     .bloc-txt-projets {
-        color: #25292E;
+        @include black;
         ;
     }
 
@@ -18,7 +21,7 @@
     .videos-hovered3 button {
         border: solid #25292E;
         background-color: #ffffff00;
-        color: #25292E;
+        @include black;
     }
 }
 
@@ -27,7 +30,7 @@
     .h1-wait,
     .h2-project,
     .bloc-txt-projets {
-        color: white;
+        @include white;
     }
 
     .line {
@@ -39,7 +42,7 @@
     .videos-hovered3 button {
         border: solid #ffffff;
         background-color: #ffffff00;
-        color: #ffffff;
+        @include white;
     }
 }
 
@@ -50,15 +53,12 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* flex-wrap: wrap; */
 }
 
 .videos-hovered1,
 .videos-hovered2,
 .videos-hovered3 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include center;
     flex-direction: column;
     z-index: 2;
     padding: 1rem;
@@ -143,10 +143,7 @@
     aspect-ratio: 16 / 9;
     transition: 0.3s;
     border-radius: 25%;
-    display: flex;
-    align-items: center;
-    align-content: center;
-    justify-content: center;
+    @include center;
 }
 
 .cards-projets {
@@ -160,8 +157,7 @@
 
 .h1-wait {
     text-align: center;
-    font-family: "danielbd";
-    /* transform: rotate(-10deg); */
+    @include danielbd;
     font-size: max(1vw, 15px);
     margin-top: 2rem;
 }
