@@ -1,11 +1,10 @@
 import { Link, useNavigate } from 'react-router-dom';
-import '../Styles/Navbar.scss'
-import { useState, useEffect, } from 'react';
+import '../Styles/Navbar.scss';
+import { useState, useEffect } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ toggleTheme, theme }) => {
     const [showNav, setShowNav] = useState(false);
     const [isLoaded, setIsLoaded] = useState(false);
-    const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
 
     useEffect(() => {
         setIsLoaded(true);
@@ -13,14 +12,6 @@ const Navbar = () => {
 
     const closeNav = () => {
         setShowNav(false);
-    };
-    useEffect(() => {
-        document.body.className = theme;
-        localStorage.setItem('theme', theme);
-    }, [theme]);
-
-    const toggleTheme = () => {
-        setTheme(theme === 'light' ? 'dark' : 'light');
     };
 
     const navigate = useNavigate();
@@ -58,10 +49,10 @@ const Navbar = () => {
                 </div>
                 <div className='theme-button'>
                     <div className='theme' onClick={toggleTheme}></div>
-
                 </div>
             </div>
         </nav>
     );
-}
+};
+
 export default Navbar;

@@ -1,9 +1,9 @@
 import { HashRouter, Routes, Route } from "react-router-dom";
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 // Components
 import NavBar from './Components/NavbarComponent';
 import Grain from "./Components/GrainComponent";
-import Cursor from './Components/CursorComponent';
+// import Cursor from './Components/CursorComponent';
 // Pages
 import HomePage from './Pages/HomePage';
 import CV from './Pages/CvPage';
@@ -11,36 +11,37 @@ import MesProjets from './Pages/MesProjetsPage';
 import Contact from './Pages/ContactPage';
 // Styles
 import './Styles/Style.css';
-import LightVideo from './Assets/Videos/bg-white.mp4'
-import DarkVideo from './Assets/Videos/bg-dark.mp4'
+import AnimatedBackground from './Components/AnimatedBackground';
 
 function App() {
+  const [theme, setTheme] = useState(localStorage.getItem('theme') || 'light');
+
+  useEffect(() => {
+    document.body.className = theme;
+    localStorage.setItem('theme', theme);
+  }, [theme]);
+
+  const toggleTheme = () => {
+    setTheme(theme === 'dark' ? 'light' : 'dark');
+  };
 
   return (
     <HashRouter>
-      <div>
-      <div className="LightVideo-background">
-      <video ontrols={false} autoPlay loop muted className="fullscreen-video">
-          <source src={LightVideo} type="video/mp4"></source>
-        </video>
+      <div className={theme}>
+        <NavBar toggleTheme={toggleTheme} theme={theme} />
+        <div className="Background">
+          <AnimatedBackground theme={theme} />
         </div>
-        <div className="DarkVideo-background">
-      <video controls={false} autoPlay loop muted className="fullscreen-video" >
-          <source src={DarkVideo} type="video/mp4"></source>
-        </video>
-        </div>
-        <NavBar />
-        <Cursor />
+        {/* <Cursor /> */}
         <Routes>
           <Route path={"/"} element={<HomePage />} />
           <Route path={"/accueil"} element={<HomePage />} />
           <Route path={"/cv"} element={<CV />} />
           <Route path={"/mesprojets"} element={<MesProjets />} />
           <Route path={"/contact"} element={<Contact />} />
-          {/* <Route path={"/menu"} element={<Menu />} /> */}
         </Routes>
+        <Grain />
       </div>
-      <Grain />
     </HashRouter>
   );
 }
