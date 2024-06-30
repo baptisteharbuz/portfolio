@@ -176,8 +176,8 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  width: 6rem;
-  height: 6rem;
+  width: 5rem;
+  height: 5rem;
   margin: auto;
   transition: 0.3s;
 }
@@ -188,18 +188,18 @@
 
 .click {
   @include danielbd;
-  font-size: max(1.5rem, 15px);
+  font-size: max(1.3rem, 15px);
   align-items: center;
   opacity: 0;
   transform: translateX(-100%);
   position: absolute;
   left: 0;
-  width: 40vw;
+  width: 30vw;
 }
 
 .h5-menu {
   @include horizon;
-  font-size: max(1.5rem, 10px);
+  font-size: max(1.3rem, 10px);
   transition: 0.3s;
   align-items: center;
   opacity: 1;
@@ -249,8 +249,8 @@
   .cv-button,
   .contact-button,
   .theme {
-    width: 4rem;
-    height: 4rem;
+    width: 3rem;
+    height: 3rem;
   }
 
   .theme-button {

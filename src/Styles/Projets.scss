@@ -22,6 +22,14 @@
         border: solid #25292E;
         background-color: #ffffff00;
         @include black;
+        transition: 0.3s;
+    }
+
+    .videos-hovered1 button:hover,
+    .videos-hovered2 button:hover,
+    .videos-hovered3 button:hover {
+        background: rgba(255, 255, 255, 0.5);
+        box-shadow: 0 4px 30px rgba(255, 255, 255, 0.1);
     }
 }
 
@@ -43,7 +51,23 @@
         border: solid #ffffff;
         background-color: #ffffff00;
         @include white;
+        transition: 0.3s;
     }
+
+    .videos-hovered1 button:hover,
+    .videos-hovered2 button:hover,
+    .videos-hovered3 button:hover {
+        background: rgba(0, 0, 0, 0.5);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.videos-hovered1 button:hover,
+.videos-hovered2 button:hover,
+.videos-hovered3 button:hover {
+    backdrop-filter: blur(12.9px);
+    -webkit-backdrop-filter: blur(12.9px);
+    transform: scale(1.2);
 }
 
 /* ///////////////////MES PROJETS*/

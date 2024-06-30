@@ -62,7 +62,6 @@
     z-index: 1;
     @include center;
     flex-direction: column;
-    height: 100vh;
 }
 
 .line {
@@ -111,6 +110,10 @@
 }
 
 @media (min-width: 1000px) {
+    .contact-container section {
+        height: 100vh;
+    }
+
     .contact-item:hover .contact-click {
         opacity: 1;
         transform: translateX(0);
@@ -138,10 +141,13 @@
 }
 
 @media (max-width: 1000px) {
+    .contact-container section {
+        margin-bottom: 8rem;
+    }
 
     .txt-presentation {
-        margin: 2rem;
-        padding: 3rem;
+        margin: 1rem;
+        padding: 2rem;
     }
 
     .txt-presentation span {
@@ -154,6 +160,11 @@
 
     .contact-item h2 {
         font-size: 0.9rem;
+    }
+}
 
+@media (min-width: 400px) {
+    .contact-container section {
+        height: 100vh;
     }
 }
